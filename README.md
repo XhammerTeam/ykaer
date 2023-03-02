@@ -31,3 +31,33 @@ chmod +x ykaer.sh
 ./ykaer.sh
 
 ( and wait ... )
+
+# cache lock error? how to fix
+
+write this codes in termux;
+
+kill -15 10591
+
+kill -9 10591
+
+sudo kill -15 10591
+
+sudo kill -9 10591
+
+sudo lsof /var/lib/dpkg/lock
+
+sudo lsof /var/lib/apt/lists/lock
+
+sudo lsof /var/lib/dpkg/lock-frontend
+
+sudo kill -9 2504
+
+sudo rm /var/lib/dpkg/lock
+
+sudo rm /var/lib/apt/lists/lock
+
+sudo rm /var/lib/dpkg/lock-frontend
+
+sudo rm /var/cache/apt/archives/lock
+
+sudo dpkg --configure -a

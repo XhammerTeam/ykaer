@@ -104,7 +104,7 @@ ls
 sleep 1
 clear
 yterminal
-if [[ $code == reset ]]; then
+elif [[ $code == reset ]]; then
 clear
 rm code
 touch code

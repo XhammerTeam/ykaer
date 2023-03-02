@@ -1,10 +1,25 @@
 printf "\e[1;32m"
+kill -15 10591
+kill -9 10591
+sudo kill -15 10591
+sudo kill -9 10591
+sudo lsof /var/lib/dpkg/lock
+sudo lsof /var/lib/apt/lists/lock
+sudo lsof /var/lib/dpkg/lock-frontend
+sudo kill -9 2504
+sudo rm /var/lib/dpkg/lock
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/cache/apt/archives/lock
+sudo dpkg --configure -a
+clear
 
 import_os() {
-apt update -y
-apt upgrade -y
-apt install python
-apt install figlet
+pkg update -y
+pkg upgrade -y
+pkg install tsu
+pkg install python
+pkg install figlet
 clear
 chmod +x ykaer.sh
 mkdir .os

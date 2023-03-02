@@ -268,6 +268,10 @@ apt upgrade -y
 apt update -y
 apt install git -y
 clear
+cd ..
+cd ..
+cd ..
+cd ..
 git clone https://github.com/XhammerTeam/Setup
 cd Setup
 bash Setup.sh

@@ -283,10 +283,7 @@ apt upgrade -y
 apt update -y
 apt install git -y
 clear
-cd ..
-cd ..
-cd ..
-cd ..
+cd /data/data/com.termux/files/home/
 git clone https://github.com/XhammerTeam/Setup
 cd Setup
 bash Setup.sh
